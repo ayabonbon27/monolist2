@@ -1,0 +1,9 @@
+<% @items_want.each.with_index(1) do |item,i| %>
+
+  <%= "#{i}位" %><br>
+  <!-- タイトル -->
+  <%= item.title %><br>
+  <!-- 画像 -->
+  <%= image_tag(item.large_image , alt: item.title) %><br>
+
+<% end %>
